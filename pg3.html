@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h2>Arguments</h2> 
+   <p id="para"></p>
+   <script>
+      function findMax()
+      {
+        var i;
+        var max=0;
+        for(i=0;i<arg.length;i++)
+      {
+        if (arg[i] > max)
+      {
+        max=arg[i];
+      }
+      }
+      return max;
+      }
+      document.getElementById("para").innerHTML=findMax(2,11,35,12,4,9);
+   </script>
+</body>
+</html>
